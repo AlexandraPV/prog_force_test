@@ -23,6 +23,18 @@ class Root {
         file_req.send(null);
     }
 
+    writeToTextFile(file, callback, mess) {
+        var file_req = new XMLHttpRequest();
+        file_req.overrideMimeType("application/json");
+        file_req.open("POST", file, true);
+        file_req.onreadystatechange = function () {
+            if (file_req.readyState === 4 && file_req.status === 200) {
+                callback(file_req.responseText);
+            }
+        };
+        file_req.send(mess);
+    }
+
     init() {
         let self = this;
         let data_output = null;
@@ -98,10 +110,15 @@ class Root {
         let winner_id = 0;
         let no_find_win = true;
         this.btn_new_winner.addEventListener("click", function () {
-            while(no_find_win){
-               winner_id = this.random_Number(data[0]["id"], data[data.length - 1]["id"]);
-               no_find_win = self.arr_winners_id.includes(winner_id);
+            while (no_find_win) {
+                winner_id = self.random_Number(data[0]["id"], data[data.length - 1]["id"]);
+                no_find_win = self.arr_winners_id.includes(winner_id);
             }
+            this.writeToTextFile(this.json_winners_path, function (arr) {
+
+
+            });
+
 
         });
 
