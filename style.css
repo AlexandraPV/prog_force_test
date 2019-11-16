@@ -1,56 +1,72 @@
 /**{*/
-    /*margin: 0;*/
-    /*padding: 0;*/
+/*margin: 0;*/
+/*padding: 0;*/
 /*}*/
 
 /*.winners_wrap{*/
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-    /*width: 90%;*/
-    /*border: 1px solid black;*/
-    /*margin: 5px auto;*/
-    /*padding: 5px 10px;*/
+/*display: flex;*/
+/*justify-content: space-between;*/
+/*width: 90%;*/
+/*border: 1px solid black;*/
+/*margin: 5px auto;*/
+/*padding: 5px 10px;*/
 /*}*/
 
 /*!*.container{*!*/
-    /*!*max-width: 600px;*!*/
-  /*!*width: 95%;*!*/
-  /*!*margin: auto;*!*/
-    /*!*border: 1px solid black;*!*/
+/*!*max-width: 600px;*!*/
+/*!*width: 95%;*!*/
+/*!*margin: auto;*!*/
+/*!*border: 1px solid black;*!*/
 /*!*}*!*/
 
 /*.winner_generation{*/
-    /*border: 1px solid black;*/
+/*border: 1px solid black;*/
 /*}*/
 
-.container{
+.container {
     margin-top: 20px;
 }
 
-.reg_form{
+.reg_form {
     margin-top: 20px;
     border: 1px solid cornflowerblue;
     padding: 10px;
 }
 
-.winners_wrap{
+.winners_wrap {
     border: 1px solid cornflowerblue;
     padding: 10px;
 }
 
-.table_wrap{
+.table_wrap {
     margin-top: 20px;
-   border: 1px solid cornflowerblue;
+    border: 1px solid cornflowerblue;
     padding: 10px;
     margin-bottom: 20px;
 }
 
-.bnt_wrap{
+.bnt_wrap {
     display: flex;
     justify-content: right;
 }
 
-.btn_td{
+.btn_td {
     display: flex;
     justify-content: space-around;
+}
+
+.hidden {
+    display: none;
+}
+
+.alert{
+    margin-top: 5px;
+}
+
+.display_none{
+    display: none !important;
+}
+
+.display_block{
+    display: block;
 }

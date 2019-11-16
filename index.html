@@ -19,27 +19,34 @@
         </div>
     </div>
     <form action="" class="reg_form" id="form_user">
-        <div class="form-group">
+        <div class="form-group ">
             <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" name="name">
+            <input type="text" class="form-control" id="name" name="name" maxlength="15">
+            <div class="alert alert-danger js_name_group display_none"></div>
         </div>
-        <div class="form-group">
+        <div class="form-group" >
             <label for="surname">Surname</label>
-            <input type="text" class="form-control" id="surname" name="surname">
+            <input type="text" class="form-control" id="surname" name="surname" maxlength="20">
+            <div class="alert alert-danger js_surname_group display_none"></div>
         </div>
         <div class="form-group">
             <label for="email">Email address:</label>
-            <input type="email" class="form-control" id="email" name="email">
+            <input type="text" class="form-control" id="email" name="email" maxlength="50">
+            <div class="alert alert-danger js_email_group display_none"></div>
         </div>
-        <div class="form-group">
+        <div class="form-group ">
             <label for="phone">Phone:</label>
-            <input type="text" class="form-control" id="phone" name="phone">
+            <input type="text" class="form-control" id="phone" name="phone" placeholder="(xxx)xxx-xx-xx" maxlength="15">
+            <div class="alert alert-danger js_phone_group display_none"></div>
         </div>
-         <div class="form-group">
+         <div class="form-group ">
             <label for="date">Date of Birth:</label>
             <input type="date" class="form-control" id="date" name="date">
+             <div class="alert alert-danger js_date_group display_none"></div>
+
         </div>
-            <button type="submit" class="btn btn-primary ">Save</button>
+            <button type="submit" class="btn btn-primary save_btn" name="save">Save</button>
+            <button class="btn btn-success edit_btn display_none" name="edit">Edit</button>
 
     </form>
     <div class="table_wrap">
@@ -55,7 +62,7 @@
 
             </tr>
             </thead>
-            <tbody>
+            <tbody class="js_user_list">
 
             </tbody>
         </table>
@@ -65,5 +72,11 @@
 
 </div>
 <script src="index.js"></script>
+<script>
+
+
+
+
+</script>
 </body>
 </html>
